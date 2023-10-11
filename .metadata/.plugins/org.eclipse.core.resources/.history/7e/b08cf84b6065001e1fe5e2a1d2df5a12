@@ -29,35 +29,19 @@ public class WorkWithAnimals {
 		Animal kitty = new Cat();
 		
 		System.out.println("Doggy says: "+doggy.getSound());
-		System.out.println("Kitty says: "+kitty.getSound());
+		System.out.println("Kitty says: "+kitty.getAction());
 		
 		Animal[] animals = new Animal[4];
 		animals[0] = doggy;
 		animals[1] = kitty;
 		
 		System.out.println("Doggy says: "+animals[0].getSound());
-		System.out.println("Kitty says: "+animals[1].getSound());
-		
-		speakAnimal(doggy);
-		
-		((Dog)doggy).digHole();
-		
-		//fido.bePrivate();
-		fido.accessPrivate();
-		
-		//Abstract Class Demo
-		Giraffe giraffe = new Giraffe();
-		giraffe.setName("Frank");
-		System.out.println(giraffe.getName());
+		System.out.println("Kitty says: "+animals[1].getAction());
 		
 	}
 	
 	public static void changeObjectName(Dog dog) {
 		dog.setName("Marcus");
-	}
-	
-	public static void speakAnimal(Animal randAnimal) {
-		System.out.println("Animal says: "+randAnimal.getSound());
 	}
 
 }

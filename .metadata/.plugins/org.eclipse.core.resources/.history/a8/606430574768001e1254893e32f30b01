@@ -42,13 +42,8 @@ public class WorkWithAnimals {
 		
 		((Dog)doggy).digHole();
 		
-		//fido.bePrivate();
+		fido.bePrivate();
 		fido.accessPrivate();
-		
-		//Abstract Class Demo
-		Giraffe giraffe = new Giraffe();
-		giraffe.setName("Frank");
-		System.out.println(giraffe.getName());
 		
 	}
 	

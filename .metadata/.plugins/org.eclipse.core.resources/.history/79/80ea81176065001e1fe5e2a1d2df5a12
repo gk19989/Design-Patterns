@@ -13,5 +13,7 @@ public class Cat extends Animal{
 		setSound("Meow");
 	}
 	
-	
+	public String action() {
+		return "Cat is walking";
+	}
 }

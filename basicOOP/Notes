@@ -1,0 +1,52 @@
+What is a Class?
+A class is blueprint that an object should look like.
+It contains Fields or Instance Variables i.e., What an Object Knows
+Methods or Functions i.e., What an Object does
+
+
+What is encapsulation?
+Grouping the data and related functions that operate on them on together is called encapsulation.
+Also restricting unauthorised access and modification of the data. 
+Implemented by using access modifiers and getters and setters.
+
+
+Difference between Instance variables and Local variables.
+Fields or Instance variables are declared in the class.
+Local variables are declared inside a method.
+
+
+“Is - A” vs “Has - A” relationship.
+Dog is a Animal (inhertiance)
+Dog has a height (field)
+
+
+Static variable 
+Any variable or method that is defined as static belongs to class rather than any object.
+It is shared by all the instances of that class
+We cannot reference non-static fields or methods inside a static method.
+
+
+What is Polymorphism?
+The ability to use single function or method in different ways is called polymorphism. 
+Compile-time polymorphism is called Method overloading. Runtime polymorphism is called Method overriding. 
+If the sub-class wants to override a method, it can do without effecting the base class. 
+We can put different types of subclasses that extend the same base class in an array of the base class. However while accessing the variables or methods, you can access only what are declared in the base class(unless type casted). 
+
+
+What is Abstract Class?
+To provide blueprint for other classes we implement the concept of abstract class. Abstract classes define the core structure and behavior that the derived classes should adopt and potentially extend. 
+abstract access_modifier class class_name { … }
+There is no concept of abstract fields.
+All methods don’t have to be abstract.
+You can have static methods also.
+The methods marked as abstract must be overridden.
+
+
+What is Interface?
+An interface sets a contract that any implementing class must adhere to. It is mainly used to support multiple inheritance and decoupling features.
+The fields in interfaces are public static and final by default. 
+Up until Java 8, interfaces could only have methods with no implementation. However, from Java 8, interfaces can contain default, static and private methods.
+In the class that is implementing this interface (Java 8+):
+default methods can be overridden.
+static methods cannot be overridden, but the class can define its own separate static method with the same name.
+private methods cannot be overridden or accessed by implementing classes.
